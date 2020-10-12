@@ -1,0 +1,32 @@
+.frame {
+    position: absolute;
+    z-index: 2;
+    width: 132px;
+    height: 132px;
+    left: 55px;
+    cursor: pointer;
+}
+
+.frame.frame--1 {
+    top: calc(140px * 0);
+}
+
+.frame.frame--2 {
+    top: calc(140px * 1);
+}
+
+.frame.frame--3 {
+    top: calc(140px * 2);
+}
+
+.frame.frame--4 {
+    top: calc(140px * 3);
+}
+
+.frame.frame--5 {
+    top: calc(140px * 4);
+}
+
+.frame.frame--6 {
+    top: calc(140px * 5);
+}

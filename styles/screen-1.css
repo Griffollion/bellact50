@@ -1,0 +1,19 @@
+.screen-1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 240px;
+    height: 400px;
+    background-color: #002172;
+    display: none;
+}
+
+
+.screen-1__logo {
+    width: 230px;
+    height: auto;
+}
