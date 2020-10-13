@@ -23,7 +23,6 @@ function hideTape() {
 }
 
 function restoreTape() {
-  console.log("RESTORE");
   var tapes = document.querySelectorAll(".screen-2__wrapper");
   var container = document.querySelector(".container");
   var facts = document.querySelectorAll(".fact");
@@ -39,7 +38,6 @@ function restoreTape() {
 }
 
 function showFact(target) {
-  console.log(target);
   var tgt = document.querySelector("." + target);
 
   tgt.classList.add("slide-in-elliptic-top-fwd");
@@ -58,10 +56,19 @@ frames.forEach(function (el) {
     hideTape();
       showFact(frameToshow);
   });
+
+  el.addEventListener("touchstart", function (el) {
+    var frameToshow = el.target.getAttribute("data-target");
+    hideTape();
+      showFact(frameToshow);
+  });
 });
 
 backToTapeBtns.forEach(function (el) {
   el.addEventListener("click", function () {
+    restoreTape();
+  });
+  el.addEventListener("touchstart", function () {
     restoreTape();
   });
 });
