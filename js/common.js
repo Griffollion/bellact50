@@ -16,9 +16,10 @@ function hideTape() {
 
   cursor.classList.add('hidden');
   container.classList.add("fact-show");
-  tapes.forEach(function(el) {
-    el.classList.add("hidden");
-  })
+
+  for(var i = 0; i <tapes.length; i++) {
+    tapes[i].classList.add("hidden");
+  }
   
 }
 
@@ -28,13 +29,14 @@ function restoreTape() {
   var facts = document.querySelectorAll(".fact");
 
   container.classList.remove("fact-show");
-  tapes.forEach(function(el) {
-    el.classList.remove("hidden");
-  })
 
-  facts.forEach(function (el) {
-    el.classList.remove("slide-in-elliptic-top-fwd");
-  });
+  for(var i = 0; i <tapes.length; i++) {
+    tapes[i].classList.remove("hidden");
+  }
+
+  for(var i = 0; i <facts.length; i++) {
+    facts[i].classList.remove("slide-in-elliptic-top-fwd");
+  }
 }
 
 function showFact(target) {
@@ -50,25 +52,25 @@ window.addEventListener("load", function () {
   init();
 });
 
-frames.forEach(function (el) {
-  el.addEventListener("click", function (el) {
+for(var i = 0; i < frames.length; i++) {
+  frames[i].addEventListener("click", function (el) {
     var frameToshow = el.target.getAttribute("data-target");
     hideTape();
       showFact(frameToshow);
   });
 
-  el.addEventListener("touchstart", function (el) {
+  frames[i].addEventListener("touchend", function (el) {
     var frameToshow = el.target.getAttribute("data-target");
     hideTape();
       showFact(frameToshow);
   });
-});
+}
 
-backToTapeBtns.forEach(function (el) {
-  el.addEventListener("click", function () {
+for(var i = 0; i < backToTapeBtns.length; i++) {
+  backToTapeBtns[i].addEventListener("click", function () {
     restoreTape();
   });
-  el.addEventListener("touchstart", function () {
+  backToTapeBtns[i].addEventListener("touchend", function () {
     restoreTape();
   });
-});
+}
