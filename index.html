@@ -11,30 +11,40 @@
     <link rel="stylesheet" href="./styles/screen-3.css">
     <link rel="stylesheet" href="./styles/frame.css">
     <link rel="stylesheet" href="./styles/fact.css">
+    <link rel="stylesheet" href="./styles/animations.css">
 </head>
 <body>
-    <div class="container active ">
-        <div class="screen-1 hidden">
+    <div class="container">
+        <div class="screen-1">
             <div class="screen-1__logo">
                 <img src="./images/bellakt_logo50.svg" alt="">
             </div>
         </div>
-        <div class="screen-2">
+        <div class="screen-2 ">
             <div class="screen-2__cursor">
                 <img src="./images/jest.svg" alt="">
             </div>
-            <div class="screen-2__wrapper">
+            <div class="screen-2__wrapper screen-2__wrapper--1">
                 <div class="screen-2__lenta"><img src="./images/lenta-min.png" alt=""></div>
-                <div class="frame frame--1"><img src="./images/photo1-min.jpg" alt=""></div>
-                <div class="frame frame--2"><img src="./images/photo2-min.jpg" alt=""></div>
-                <div class="frame frame--3"><img src="./images/photo3-min.jpg" alt=""></div>
-                <div class="frame frame--4"><img src="./images/photo4-min.jpg" alt=""></div>
-                <div class="frame frame--5"><img src="./images/photo5-min.jpg" alt=""></div>
-                <div class="frame frame--6"><img src="./images/photo6-min.jpg" alt=""></div>
+                <div class="frame frame--1"><img src="./images/photo1-min.jpg" alt="" data-target="fact--1"></div>
+                <div class="frame frame--2"><img src="./images/photo2-min.jpg" alt="" data-target="fact--2"></div>
+                <div class="frame frame--3"><img src="./images/photo3-min.jpg" alt="" data-target="fact--3"></div>
+                <div class="frame frame--4"><img src="./images/photo4-min.jpg" alt="" data-target="fact--4"></div>
+                <div class="frame frame--5"><img src="./images/photo5-min.jpg" alt="" data-target="fact--5"></div>
+                <div class="frame frame--6"><img src="./images/photo6-min.jpg" alt="" data-target="fact--6"></div>
+            </div>
+            <div class="screen-2__wrapper screen-2__wrapper--2">
+                <div class="screen-2__lenta"><img src="./images/lenta-min.png" alt=""></div>
+                <div class="frame frame--1"><img src="./images/photo1-min.jpg" alt="" data-target="fact--1"></div>
+                <div class="frame frame--2"><img src="./images/photo2-min.jpg" alt="" data-target="fact--2"></div>
+                <div class="frame frame--3"><img src="./images/photo3-min.jpg" alt="" data-target="fact--3"></div>
+                <div class="frame frame--4"><img src="./images/photo4-min.jpg" alt="" data-target="fact--4"></div>
+                <div class="frame frame--5"><img src="./images/photo5-min.jpg" alt="" data-target="fact--5"></div>
+                <div class="frame frame--6"><img src="./images/photo6-min.jpg" alt="" data-target="fact--6"></div>
             </div>
         </div>
-        <div class="screen-3 hidden">
-            <div class="fact fact--1 hidden">
+        <div class="screen-3">
+            <div class="fact fact--1">
                     <div class="fact__top">
                         <div class="fact__logo">
                             <img src="./images/bellakt_logo50.svg" alt="">
@@ -50,11 +60,11 @@
                     </div>
                     <div class="fact__bottom">
                         <a href="" class="fact__button">Узнать больше</a>
-                        <div class="fact__link" data-js="back-to-lenta">Вернутся к фактам</div>
+                        <div class="fact__link" data-js="back-to-tape">Вернутся к фактам</div>
                     </div>
             </div>
 
-            <div class="fact fact--2 hidden">
+            <div class="fact fact--2">
                 <div class="fact__top">
                     <div class="fact__logo">
                         <img src="./images/bellakt_logo50.svg" alt="">
@@ -70,11 +80,11 @@
                 </div>
                 <div class="fact__bottom">
                     <a href="" class="fact__button">Узнать больше</a>
-                    <div class="fact__link" data-js="back-to-lenta">Вернутся к фактам</div>
+                    <div class="fact__link" data-js="back-to-tape">Вернутся к фактам</div>
                 </div>
             </div>
 
-            <div class="fact fact--3 hidden">
+            <div class="fact fact--3">
                 <div class="fact__top">
                     <div class="fact__logo">
                         <img src="./images/bellakt_logo50.svg" alt="">
@@ -90,10 +100,10 @@
                 </div>
                 <div class="fact__bottom">
                     <a href="" class="fact__button">Узнать больше</a>
-                    <div class="fact__link" data-js="back-to-lenta">Вернутся к фактам</div>
+                    <div class="fact__link" data-js="back-to-tape">Вернутся к фактам</div>
                 </div>
             </div>
-            <div class="fact fact--4 hidden">
+            <div class="fact fact--4">
                 <div class="fact__top">
                     <div class="fact__logo">
                         <img src="./images/bellakt_logo50.svg" alt="">
@@ -109,10 +119,10 @@
                 </div>
                 <div class="fact__bottom">
                     <a href="" class="fact__button">Узнать больше</a>
-                    <div class="fact__link" data-js="back-to-lenta">Вернутся к фактам</div>
+                    <div class="fact__link" data-js="back-to-tape">Вернутся к фактам</div>
                 </div>
             </div>
-            <div class="fact fact--5 hidden">
+            <div class="fact fact--5">
                 <div class="fact__top">
                     <div class="fact__logo">
                         <img src="./images/bellakt_logo50.svg" alt="">
@@ -128,7 +138,7 @@
                 </div>
                 <div class="fact__bottom">
                     <a href="" class="fact__button">Узнать больше</a>
-                    <div class="fact__link" data-js="back-to-lenta">Вернутся к фактам</div>
+                    <div class="fact__link" data-js="back-to-tape">Вернутся к фактам</div>
                 </div>
             </div>
             <div class="fact fact--6 ">
@@ -147,12 +157,13 @@
                 </div>
                 <div class="fact__bottom">
                     <a href="" class="fact__button">Узнать больше</a>
-                    <div class="fact__link" data-js="back-to-lenta">Вернутся к фактам</div>
+                    <div class="fact__link" data-js="back-to-tape">Вернутся к фактам</div>
                 </div>
             </div>
         </div>
             
         </div>
     </div>
+    <script src="./js/common.js"></script>
 </body>
 </html>

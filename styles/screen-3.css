@@ -5,5 +5,13 @@
     z-index: 3;
     width: 240px;
     height: 400px;
-    background-color: #e4f1fc;
+    opacity: 0;
+    pointer-events: none;
 }
+
+.container.fact-show .screen-3 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+

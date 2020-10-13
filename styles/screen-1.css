@@ -8,12 +8,23 @@
     z-index: 1;
     width: 240px;
     height: 400px;
-    background-color: #002172;
-    display: none;
+    transition: opacity 2s;
+}
+
+.screen-1.disactive {
+    opacity: 0;
+    pointer-events: none;
 }
 
 
 .screen-1__logo {
+    
     width: 230px;
     height: auto;
+
+}
+
+.container.active .screen-1__logo {
+    animation: imgRotate 0.8s linear both;
+    animation-delay: 0.5s;
 }

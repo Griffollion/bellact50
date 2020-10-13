@@ -21,6 +21,20 @@ img {
     height: 400px;
     pointer-events: none;
     opacity: 0;
+    background-color: #002172;
+    
+}
+
+.container.fact-show {
+    background-color: #e4f1fc;
+}
+
+.container.fact-show .screen-2__cursor{
+    display: none;
+}
+
+.container.fact-show .screen-2__wrapper {
+    animation-play-state: paused !important;
 }
 
 .container.active {
