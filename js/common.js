@@ -24,6 +24,7 @@ function hideTape() {
 }
 
 function restoreTape() {
+  console.log('Clicked')
   var tapes = document.querySelectorAll(".screen-2__wrapper");
   var container = document.querySelector(".container");
   var facts = document.querySelectorAll(".fact");
@@ -59,18 +60,18 @@ for(var i = 0; i < frames.length; i++) {
       showFact(frameToshow);
   });
 
-  frames[i].addEventListener("touchend", function (el) {
-    var frameToshow = el.target.getAttribute("data-target");
-    hideTape();
-      showFact(frameToshow);
-  });
+  // frames[i].addEventListener("touchend", function (el) {
+  //   var frameToshow = el.target.getAttribute("data-target");
+  //   hideTape();
+  //     showFact(frameToshow);
+  // });
 }
 
 for(var i = 0; i < backToTapeBtns.length; i++) {
   backToTapeBtns[i].addEventListener("click", function () {
     restoreTape();
   });
-  backToTapeBtns[i].addEventListener("touchend", function () {
-    restoreTape();
-  });
+  // backToTapeBtns[i].addEventListener("touchend", function () {
+  //   restoreTape();
+  // });
 }
