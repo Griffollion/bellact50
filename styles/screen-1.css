@@ -16,15 +16,9 @@
     pointer-events: none;
 }
 
-
 .screen-1__logo {
     
     width: 230px;
     height: auto;
 
-}
-
-.container.active .screen-1__logo {
-    animation: imgRotate 0.8s linear both;
-    animation-delay: 0.5s;
 }

@@ -35,8 +35,27 @@
     border-radius: 50%;
 }
 
+.fact__img {
+    margin-bottom: 15px;
+}
+
+.fact__img img {
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 0px 20px rgba(0,0,0, 0.7);
+}
+
 .fact__logo img {
     width: 60px;
+}
+
+
+.fact.fact--6 .fact__description-title,
+.fact.fact--6 .fact__description-text {
+    max-width: 230px;
+}
+
+.fact.fact--6 .fact__description-text  {
+    font-size: 12px;
 }
 
 .fact__description {

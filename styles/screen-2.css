@@ -17,7 +17,7 @@
 
 .screen-2__wrapper {
     position: absolute;
-    top: 0;
+    top: -440px;
     left: 0;
     width: 100%;
     height: 840px;
@@ -40,7 +40,7 @@
 }
 
 .screen-2__wrapper.screen-2__wrapper--2 {
-    top: -840px;
+    top: -1280px;
 }
 
 .screen-2.active .screen-2__wrapper.screen-2__wrapper--2 {

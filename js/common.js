@@ -6,34 +6,26 @@ function init() {
       var screen2 = document.querySelector('.screen-2');
       screen1.classList.add('disactive');
       screen2.classList.add('active');
-  },2000)
+  },1000)
 }
 
 function hideTape() {
-  var tapes = document.querySelectorAll(".screen-2__wrapper");
   var container = document.querySelector(".container");
   var cursor = document.querySelector(".screen-2__cursor");
 
   cursor.classList.add('hidden');
   container.classList.add("fact-show");
 
-  for(var i = 0; i <tapes.length; i++) {
-    tapes[i].classList.add("hidden");
-  }
+
   
 }
 
 function restoreTape() {
   console.log('Clicked')
-  var tapes = document.querySelectorAll(".screen-2__wrapper");
   var container = document.querySelector(".container");
   var facts = document.querySelectorAll(".fact");
 
   container.classList.remove("fact-show");
-
-  for(var i = 0; i <tapes.length; i++) {
-    tapes[i].classList.remove("hidden");
-  }
 
   for(var i = 0; i <facts.length; i++) {
     facts[i].classList.remove("slide-in-elliptic-top-fwd");
