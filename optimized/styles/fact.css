@@ -74,7 +74,7 @@
 .fact__description-title {
     margin-bottom: 5px;
     font-size: 15px;
-    font-family: MBold, Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .fact__description-text  {
@@ -103,7 +103,7 @@
     margin-bottom: 10px;
     width: 174px;
     border-radius: 40px;
-    font-family: MBold, Arial, Helvetica, sans-serif;
+    font-weight: 700;
     cursor: pointer;
     transition: background-color .25s;
     transition: box-shadow .4s, transform .4s;
@@ -126,7 +126,7 @@
     font-size: 13px;
     color: #002172;
     padding-bottom: 10px;
-    font-family: MBold, Arial, Helvetica, sans-serif;
+    font-weight: 700;
     cursor: pointer;
     transition: text-shadow .4s, transform .4s,background-color .25s;
 }
