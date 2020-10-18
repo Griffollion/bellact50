@@ -1,0 +1,142 @@
+.fact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transform: translateY(-600px) rotateX(-30deg) scale(0);
+  transform-origin: 50% 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../images/back_pattern_fakt-min.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  
+}
+
+.fact__top {
+    flex-grow: 2;
+    margin-bottom: 15px;
+}
+
+.fact__logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    background-color: #002172;
+    border-radius: 50%;
+}
+
+.fact__img {
+    margin-bottom: 15px;
+}
+
+.fact__img img {
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 0px 20px rgba(0,0,0, 0.7);
+}
+
+.fact__logo img {
+    width: 60px;
+}
+
+
+.fact.fact--6 .fact__description-title,
+.fact.fact--6 .fact__description-text {
+    max-width: 230px;
+}
+
+.fact.fact--6 .fact__description-text  {
+    font-size: 12px;
+}
+
+.fact__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fact__description-title,
+.fact__description-text {
+    max-width: 200px;
+    text-align: center;
+}
+
+.fact__description-title {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: MBold, Arial, Helvetica, sans-serif;
+}
+
+.fact__description-text  {
+    font-size: 13px;
+}
+
+.fact.fact--2 .fact__description-text {
+    width: 150px;
+}
+
+.fact__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow .5s, transform .5s;
+}
+
+.fact__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #002172;
+    margin-bottom: 10px;
+    width: 174px;
+    border-radius: 40px;
+    font-family: MBold, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color .25s;
+    transition: box-shadow .4s, transform .4s;
+}
+
+.fact__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
+}
+
+.fact__button:hover {
+    background-color: #042b8d;
+}
+
+.fact__button:active {
+    background-color: #001752;
+}
+
+.fact__link {
+    font-size: 13px;
+    color: #002172;
+    padding-bottom: 10px;
+    font-family: MBold, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: text-shadow .4s, transform .4s,background-color .25s;
+}
+
+.fact__link:hover {
+    color: #042b8d;
+    text-shadow: 0 3px 6px rgba(0,0,0, 0.2);
+    transform: scale(1.1);
+}
+
+.fact__link:active {
+    color: #001752;
+}

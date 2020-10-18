@@ -1,0 +1,51 @@
+html,
+body {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: Regular, Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: auto;
+    display: inline-block;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 400px;
+    pointer-events: none;
+    opacity: 0;
+    background-color: #002172;
+    
+}
+
+.container.fact-show {
+    background-color: #e4f1fc;
+}
+
+.container.fact-show .screen-2__cursor {
+    display: none;
+}
+
+.container.fact-show .screen-2__wrapper {
+    animation-play-state: paused !important;
+}
+
+.container.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}

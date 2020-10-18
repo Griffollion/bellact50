@@ -1,0 +1,99 @@
+.screen-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 240px;
+    height: 400px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 4s;
+}
+
+.screen-2.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.screen-2__wrapper {
+    position: absolute;
+    top: -440px;
+    left: 0;
+    width: 100%;
+    height: 840px;
+}
+
+.screen-2__wrapper:hover {
+    z-index: 3;
+}
+
+.screen-2:hover .screen-2__wrapper{
+    animation-play-state: paused !important;
+}
+
+.screen-2:hover .screen-2__cursor {
+    display: none;
+}
+
+.screen-2.active .screen-2__wrapper.screen-2__wrapper--1 {
+    animation: scroll 18s infinite linear;
+}
+
+.screen-2__wrapper.screen-2__wrapper--2 {
+    top: -1280px;
+}
+
+.screen-2.active .screen-2__wrapper.screen-2__wrapper--2 {
+    animation: scroll-2 18s infinite linear;
+}
+.screen-2__lenta {
+    position: absolute;
+    top: 0;
+    left: 14px;
+}
+
+.screen-2__cursor {
+    position: absolute;
+    left: 96px;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.screen-2.screen-2.active .screen-2__cursor {
+    animation: cursorPing 3s linear infinite
+}
+
+.screen-2:hover .screen-2__cursor{
+    animation-play-state: paused !important;
+}
+
+
+.screen-2__cursor::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.4;
+}
+
+
+.screen-2__cursor img {
+    width: 30px;
+    height: auto;
+    position: relative;
+    z-index: 4;
+}

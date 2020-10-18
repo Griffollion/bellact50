@@ -1,0 +1,24 @@
+.screen-1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 240px;
+    height: 400px;
+    transition: opacity 2s;
+}
+
+.screen-1.disactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.screen-1__logo {
+    
+    width: 230px;
+    height: auto;
+
+}
